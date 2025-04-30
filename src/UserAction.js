@@ -92,13 +92,13 @@ export function InfoSidebar(props) {
       </div>
       <div className="box list-menu">
         &nbsp;&nbsp;
-        <a href="https://web.newthuhole.com/" target="_blank">
+        <a href="https://new-q.thuhole.site/" target="_blank">
           <span className="icon icon-textfile" />
-          <label>跳转至新Q</label>
+          <label>跳转至新Q树洞</label>
         </a>
         <a href="https://new-t.github.io/" target="_blank">
           <span className="icon icon-textfile" />
-          <label>跳转至新T</label>
+          <label>跳转至新T树洞</label>
         </a>
         {/* <p>
           <em>强烈建议开始使用前先看一遍所有设置选项</em>
