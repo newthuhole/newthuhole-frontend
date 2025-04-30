@@ -22,7 +22,7 @@ const BUILTIN_IMGS = {
 
 const DEFAULT_CONFIG = {
   background_img:
-    'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/gbp.jpg',
+    'https://www.tsinghua.edu.cn/image/nav-bg.jpg',
   background_color: '#113366',
   pressure: false,
   easter_egg: true,
