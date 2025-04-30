@@ -19,7 +19,8 @@ import './UserAction.css';
 
 const REPOSITORY = 'https://git.thu.monster/newthuhole/';
 const REPOSITORY_Q = 'https://github.com/newq-hole/NewQ-frontend';
-export const EMAIL = 'new-q@thuhole.site';
+
+export const EMAIL = 'hi@newthuhole.com';
 
 export const TokenCtx = React.createContext({
   value: null,
@@ -35,11 +36,11 @@ export function DropdownSidebar() {
 
     if (event.target.value === '新Q树洞') {
       // 切换到后端 1
-      window.BACKEND = process.env.REACT_APP_BACKEND || 'http://api.thuhole.site/';
+      window.BACKEND = process.env.REACT_APP_BACKEND || 'http://api.newthuhole.com/';
       console.log('切换到后端 1:', window.BACKEND);
     } else if (event.target.value === '旧洞') {
       // 切换到后端 2
-      window.BACKEND = process.env.REACT_APP_BACKEND_OLD || 'http://api2.thuhole.site/';
+      window.BACKEND = process.env.REACT_APP_BACKEND_OLD || 'http://api2.newthuhole.com/';
       console.log('切换到后端 2:', window.BACKEND);
     }
   };
@@ -92,7 +93,7 @@ export function InfoSidebar(props) {
       </div>
       <div className="box list-menu">
         &nbsp;&nbsp;
-        <a href="https://new-q.thuhole.site/" target="_blank">
+        <a href="https://web.newthuhole.com/" target="_blank">
           <span className="icon icon-textfile" />
           <label>跳转至新Q</label>
         </a>
