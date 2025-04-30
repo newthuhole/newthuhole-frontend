@@ -18,7 +18,7 @@ import { save_attentions } from './Attention';
 import './UserAction.css';
 
 const REPOSITORY = 'https://git.thu.monster/newthuhole/';
-const REPOSITORY_Q = 'https://github.com/newq-hole/NewQ-frontend';
+const REPOSITORY_Q = 'https://github.com/newthuhole/newthuhole-frontend';
 export const EMAIL = 'new-q@thuhole.site';
 
 export const TokenCtx = React.createContext({
@@ -33,7 +33,7 @@ export function DropdownSidebar() {
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
 
-    if (event.target.value === '新Q树洞') {
+    if (event.target.value === 'T大树洞') {
       // 切换到后端 1
       window.BACKEND = process.env.REACT_APP_BACKEND || 'http://api.thuhole.site/';
       console.log('切换到后端 1:', window.BACKEND);
@@ -49,7 +49,7 @@ export function DropdownSidebar() {
       <label htmlFor="dropdown">选择后端服务器：</label>
       <select id="dropdown" value={selectedValue} onChange={handleChange}>
         <option value="">请选择</option>
-        <option value="新Q树洞">新Q树洞</option>
+        <option value="T大树洞">T大树洞</option>
         <option value="旧洞">旧洞</option>
       </select>
       {selectedValue && <p>你选择了: {selectedValue}</p>}
@@ -80,11 +80,11 @@ export function InfoSidebar(props) {
         &nbsp;&nbsp;
         <a href="/policy.html" target="_blank">
           <span className="icon icon-textfile" />
-          <label>树洞规范（新T）</label>
+          <label>树洞规范（新T树洞）</label>
         </a>
         <a href="/policy_q.html" target="_blank">
           <span className="icon icon-textfile" />
-          <label>树洞规范（新清）</label>
+          <label>树洞规范（T大树洞）</label>
         </a>
         {/* <p>
           <em>强烈建议开始使用前先看一遍所有设置选项</em>
@@ -184,7 +184,7 @@ export function InfoSidebar(props) {
       </div>
       <div className="box help-desc-box2">
         <p>
-          新清树洞是基于新T树洞，作出了少量修改版本，继承新T树洞的开源精神，基于
+          T大树洞是基于新T树洞，作出了少量修改版本，继承新T树洞的开源精神，基于
           <a href="http://www.wtfpl.net/about/" target="_blank">
             WTFPLv2
           </a>
@@ -383,7 +383,7 @@ export class LoginForm extends Component {
                       </p>
                       <p>
                         <small>
-                          新清树洞
+                          T大树洞
                           面向T大学生，通过已验证身份的第三方服务授权登陆。
                         </small>
                       </p>
